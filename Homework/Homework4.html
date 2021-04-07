@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework4</title>
+    <style>
+        .mybutton {
+            background-color: rgb(79, 250, 207);
+            font-size: 50px;
+            text-align: center;
+            cursor: pointer;
+            color: rgb(19, 0, 128);
+            border: none;
+            padding: 20px 15px;
+            border-radius: 25px;
+            box-shadow: 0 9px rgb(17, 116, 141);
+            outline: none;
+        }
+        .mybutton:hover {
+            background-color: rgb(67, 179, 243);
+        }
+        .mybutton:active {
+            background-color: rgb(67, 179, 243);
+            box-shadow: 0 8px rgb(38, 4, 70);
+            transform: translateX(10px) translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <button class="mybutton">
+        Click me
+    </button>
+
+    
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+   
+    <script>
+        var fruits = [
+          "apple", "avocado", "apricot", "banana", "mango", 
+          "grapefruit", "fig", "kiwi", "lime", "lemon",
+          "melon", "watermelon", "plum", "peach", "orange", ];
+          document.getElementById("demo").innerHTML = fruits;
+          document.getElementById("demo1").innerHTML = fruits[7];
+          document.getElementById("demo2").innerHTML = fruits.length;
+    </script>
+</body>
+</html>

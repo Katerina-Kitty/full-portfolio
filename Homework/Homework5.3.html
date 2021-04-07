@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="MyFunc()">Try it</button>
+<p id="demo1"></p>
+     <button onclick="MyFunc2()">Try it (Number)</button>
+<p id="demo2"></p>
+
+    <script>
+        var months = ["January", "February", "March", "April", "May", "June", "June", "August", "September", "October", "November", "December"];
+        document.getElementById("demo1").innerHTML = months;
+        function MyFunc() {
+            months.sort();
+            months.reverse();
+        document.getElementById("demo1").innerHTML = months;
+        }
+
+        var points = [5, 100, 10, 15, 25, 1000, 200];
+        document.getElementById("demo2").innerHTML = points;
+        function MyFunc2() {
+            points.sort();
+        document.getElementById("demo2").innerHTML = points;
+            
+            points.sort(function(a, b) {
+                 return a-b
+                  });
+        document.getElementById("demo2").innerHTML = points;
+        }
+
+    </script>
+</body>
+</html>

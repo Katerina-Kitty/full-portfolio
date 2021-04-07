@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <button class="sub button"></button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        var x = 16 + "Volvo";   //Number + String(строка)  
+        document.getElementById('demo1').innerHTML = x; //16Volvo
+        var y = "Volvo" + 16; //Volvo16
+
+        var z = "Volvo" + 16 + 4;  //Volvo164
+        var z =  16 + 4 + "Volvo"; //20Volvo
+
+
+        //Object
+        var person = {firstname: "Maxim", lastname: "LastName", age: "20"};
+
+        // 5 Типов данных со значениями
+        //Строка (String) - "Privet"
+        //Номер (Number) - 20
+        //Булевый (boolean) - Логичекий
+        //Объект (object) 
+        //Function (Функция) - function f() {}
+
+        //еще 2 типа данных, которые не могут содержать значения!
+        //null
+        //undefined - неопределенный
+
+        //3 ТИПА ОБЪЕКТОВ
+        //Object
+        //Date
+        //Array - Массив
+
+
+
+        //Boolean состоит из 2х слов - true, false.
+
+        
+
+        document.getElementById("demo3").innerHTML = Boolean(9 > 10);
+
+        
+        //Оператор typeof - ищет тип данных!
+
+        document.getElementById('demo2').innerHTML = 
+        typeof "john" + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof NaN + "<br>" + 
+        typeof false + "<br>" +
+        typeof [1,2,3,4] + "<br>" +
+        typeof {name: "Vasya"} + "<br>" + 
+        typeof new Date() + "<br>" +
+        typeof function() {} + "<br>" +
+        typeof myCar + "<br>" +
+        typeof null; //Пишет тип данных объект, НО принято считать отдельным данных null;
+
+        
+
+        //for(var i = 0; 0 < 10; i++) {}
+        //for(;;) {} - Так делать не надо!!!  ВЕЧНЫЙ ЦИКЛ - УБИВАЕТ РАБОТУ КОМПЬЮТЕРА!
+        //while
+
+        
+
+        var text = "";
+        var i = 0;
+        while(i < 10) {
+            text += "<br>The number is " + i;
+            i++;
+        }
+
+        document.getElementById('demo4').innerHTML = text;
+        
+
+        //do while
+        var text1 = "";
+        var j = 0;
+
+        do {
+            text1 += "<br>The number is " + j;
+            j++;
+        }
+        while(j < 10);
+
+        document.getElementById('demo5').innerHTML = text1;
+
+        //ВАРИАНТ ВЫВОДА МАССИВА В ПОМОЩЬЮ ЦИКЛА!
+
+        var cars = ["BMW", "Volvo", "Ford"];
+        var f = 0;
+        var text2 = "";
+        for(;cars[f];) {
+         text2 += cars[f] + "<br>";
+         f++;
+        }
+        document.getElementById('demo6').innerHTML = text2;
+        
+
+        //Framework
+        //Jquery - Почитать! (я больше лайк) 
+        //Bootstrap - Почитать!
+
+    </script>
+</body>
+</html>

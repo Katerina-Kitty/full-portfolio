@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <!--   if - если
+    else - иначе -->
+
+    <script>
+      var x = 12;
+      if (x == 10) {
+        //== Равно,  != - Не равно! , === - Строго равно! (Полное сравнение)
+        document.getElementById("demo1").innerHTML = "x = 10!";
+      } else {
+        document.getElementById("demo1").innerHTML = "x не = 10!";
+      }
+
+      //////////////////////////////////////////////////////////
+
+      var year = prompt("В каком году родился дед мороз?", "");
+
+      if (year < 2007) {
+        alert("Это слишком рано!");
+      } else if (year > 2007) {
+        //Возможность добавить еще одно условие!
+        alert("Это слишком поздно!");
+      } else {
+        alert("Верно!");
+      }
+
+      //////////////////////////////////////////////////////////
+
+      function myFunction() {
+        var greeting; //Приветствие!
+        var time = new Date().getHours();
+        if (time < 10) {
+          greeting = "Good Morning";
+        } else if (time < 17) {
+          greeting = "Good day";
+        } else if (time < 21) {
+          greeting = "Good evening";
+        } else {
+          greeting = "Good night";
+        }
+
+        document.getElementById("demo2").innerHTML = greeting;
+      }
+
+      /////////////////////////////////////////////
+    </script>
+  </body>
+</html>

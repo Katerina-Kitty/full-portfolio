@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // alert(window.navigator.appName);
+       // window.navigator.appVersion;
+       // window.navigator.battery;
+       // window.navigator.oscpu;
+       // window.navigator.cookieEnabled;
+
+       // window.history.length;
+       // window.history.state;
+
+       // window.history.back();
+       // window.history.forward();
+
+       // screen.height;
+       // screen.width;
+       // screen.availTop;
+
+        alert('Экран: ' + screen.width + 'px' + ' x ' + screen.height + 'px');
+        alert(window.navigator.appName);
+        alert(window.navigator.appVersion);
+        alert(window.navigator.cookieEnabled);
+        alert(window.history.length);
+        alert(window.history.state);
+        alert(screen.availTop);
+
+        function goBack() {
+            window.history.back()
+        }
+
+        function goForward() {
+            window.history.forward()
+        }
+
+    </script>
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="goForward()">Go Forward</button>
+</body>
+</html>

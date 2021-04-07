@@ -1,0 +1,15 @@
+document.getElementById("demo1").innerHTML = Math.round(5.9);
+document.getElementById("demo2").innerHTML = Math.pow(137, 4);
+document.getElementById("demo3").innerHTML = Math.sqrt(121);
+document.getElementById("demo4").innerHTML = Math.abs(-10);
+document.getElementById("demo5").innerHTML = Math.ceil(23.137);
+document.getElementById("demo6").innerHTML = Math.floor(5.555);
+document.getElementById("demo7").innerHTML = Math.min(-3, 5, 21, 10, -37, 105, 0);
+document.getElementById("demo8").innerHTML = Math.max(-3, 5, 21, 10, -37, 105, 0);
+document.getElementById("demo9").innerHTML = Math.random();
+document.getElementById("demo10").innerHTML = Math.floor(Math.random()*25);
+document.getElementById("demo11").innerHTML = Math.floor(Math.random()*500)+1;
+document.getElementById("demo12").innerHTML = Math.cbrt(27);
+document.getElementById("demo13").innerHTML = Math.cos(0);
+document.getElementById("demo14").innerHTML = Math.log(1);
+document.getElementById("demo15").innerHTML = Math.exp(1);

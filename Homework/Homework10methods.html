@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рандомная сортиравка</title>
+</head>
+<body>
+    <button onclick="MyFunc1">Try it(word)</button>
+    <p id="demo1"></p>
+    <button onclick="MyFunc2">Try it (numder)</button>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        var fruits = ["apple", "banana", "mango", "orange", "kiwi", "pineapple", "lime", "lemon", "melon", "peach"];
+        document.getElementById("demo1").innerHTML = fruits;
+        function MyFunc1() {
+            fruits.sort();
+            fruits.reverse();
+            document.getElementById("demo1").innerHTML = fruits;
+        }
+
+        var points = [27, 311, 0.5, -45, 50, 687, 2, -88];
+        document.getElementById("demo2").innerHTML = points;
+        function MyFunc2() {
+            points.sort();
+            document.getElementById("demo2").innerHTML = points;
+        }
+    </script>
+</body>
+</html>

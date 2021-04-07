@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: 1em sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        form {
+            max-width: 200px;
+            margin: 0;
+            padding: 0 5px;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=number],
+        textarea,
+        fieldset {
+            width: 100%;
+            border: 1px solid #333;
+            margin: 0;
+            font-size: 90%;
+            box-sizing: border-box;
+        }
+
+        input:invalid {
+            box-shadow: 0 0 5px 1px red;
+        }
+
+        input:valid {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>
+            <fieldset>
+                <legend>Hello user!</legend>
+                <input type="radio" required name="title" id="r1" value="Mr">
+                <label>Mr.</label>
+                <input type="radio" required name="title" id="r2" value="Ms">
+                <label>Ms.</label>
+            </fieldset>
+        </p>
+
+        <p>
+            <label>How old?</label>
+            <input type="number" min="12" max="120" step="1" id="n1" name="age" pattern="\d+">
+        </p>
+
+        <p>
+            <label>Your fav fruit</label>
+            <input type="text" id="t1" name="fruit" list="l1" required pattern="[Bb]anana|[Cc]herry|[Aa]pple">
+            <datalist id="li">
+                <option>Banana</option>
+                <option>Cherry</option>
+                <option>Apple</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label>Email</label>
+            <input type="email" id="t2" name="email">
+        </p>
+
+        <p>
+            <label>Text</label>
+            <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+        </p>
+
+        <p>
+            <button>Submit</button>
+        </p>
+    </form>
+</body>
+</html>

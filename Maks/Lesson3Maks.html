@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3</title>
+    <style></style>
+  </head>
+  <body>
+    <!--p - сюда выводим информацию по нажатию кнопки-->
+    <p id="demo1"><!--ПАРАГРАФ!--></p>
+
+    <!--по нажатию на кнопку = выполняется функция внутри onclick-->
+    <button onclick="myFunc1()">Click me</button>
+    <!--onclick - что будет происходить при нажатии!-->
+
+    <script>
+      //В кавычках после названия функции мы пишем АРГУМЕНТ
+      //Передаём в кавычки после названия - то что вводим для обрабтки функцией!
+      //Пример ниже - вводим число внутрь функции (принимаем number и выводим его уже в квадрате!)
+      function myFunc1() {
+        //Создали на JS функцию! (Стандартный её вид)
+        document.getElementById("demo1").innerHTML = Date();
+      }
+
+      /* function MyFunc2(number) {
+       number * number;
+      }
+ */
+      //document - Обращаемся в общем к документу (пишем именно слово document, а не название файла!)
+      //getElementById - берем ТЕГ по ID  (указываем его)
+      //.innerHTML - просто вывод текста, innerText - то же самое!
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+
+    <button onclick="MyFunc1()">Try it (word)</button>
+    <button onclick="MyFunc2()">Try it (number1)</button>
+
+    <script>
+        var vegetables = ["tomato", "potato", "beet", "cabbage", "carrot", "cucumber", "eggplant", "onion", "pumpkin", "radish"];
+        document.getElementById("demo1").innerHTML = vegetables;
+        function MyFunc1() {
+            vegetables.sort();
+            document.getElementById("demo1").innerHTML = vegetables;
+
+            vegetables.reverse();
+            document.getElementById("demo2").innerHTML = vegetables;
+        }
+        
+        var points = [5, 25, 37, -29, 108, 92, -250, 431, 0, -1, 2];
+        document.getElementById("demo3").innerHTML = points;
+        function MyFunc2 (){
+            points.sort();
+            document.getElementById("demo3").innerHTML = points;
+
+            points.sort(function(a, b) {
+                return a-b
+            });
+            document.getElementById("demo4").innerHTML = points;
+        }
+    </script>
+</body>
+</html>

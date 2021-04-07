@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="crown">Корона</canvas>
+
+    <script>
+        var canvas = document.getElementById('crown');
+        var c = canvas.getContext('2d');
+        canvas.height = 200;
+        canvas.width = 200;
+        c.beginPath();
+        c.arc(80, 100, 56, 3/4 * Math.PI, 1/4*Math.PI, true);
+        c.fill();
+        c.moveTo(40, 140);
+        c.lineTo(20, 40);
+        c.lineTo(60,100);
+        c.lineTo(80, 20);
+        c.lineTo(100, 100);
+        c.lineTo(140, 40);
+        c.lineTo(120, 140);
+        c.stroke();
+
+    </script>
+    
+</body>
+</html>

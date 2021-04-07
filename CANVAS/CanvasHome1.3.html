@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas height="1500" width="1500" id="example">Обновите браузер</canvas>
+
+    <script>
+        var example = document.getElementById("example");
+        ctx = example.getContext('2d');
+
+        ctx.fillStyle = "#EFEFEF";
+        ctx.fillRect(10, 10, 400, 400);
+        
+        function getRadians(degrees) {
+            return (Math.PI/180)*degrees;
+        }
+
+        ctx.fillStyle = "#010101";
+        ctx.arc(210, 210, 100, 0, getRadians(360));
+        ctx.fill();
+
+    </script>
+</body>
+</html>

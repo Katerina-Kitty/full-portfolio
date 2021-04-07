@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="demo1"></p>
+  <p id="demo2">Hello Everybody!</p>
+  <p id="demo3"></p>
+  <p id="demo5"></p>
+
+ <button onclick="Func1()">
+ Click me for change FontSize!
+ </button>
+
+    <script>
+     document.getElementById("demo1").innerHTML = "Privet";
+
+     document.getElementById('demo5').innerHTML = "Kak dela";
+
+     document.getElementById('demo3').innerHTML = "How are you?";
+
+     function Func1() {
+       document.getElementById("demo2").style.fontSize = "30px";
+     }
+    </script>
+     
+</body>
+</html>

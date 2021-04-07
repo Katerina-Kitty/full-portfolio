@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" class="btn-one">Get all p</button>
+    <button type="button" class="btn-two">Get first p</button>
+    <button type="button" class="btn-three">Get last p</button>  
+
+    <p>Text in p 1</p>
+    <p>Text in p 2</p>
+    <p id="extra">Text in p 3</p>
+
+    <script>
+        $(document).ready(function() {
+            $('.btn-one').click(function() {
+                var str = $("p").text();
+                alert(str);
+            });
+            $('.btn-two').click(function() {
+                var str = $("p:first").text();
+                alert(str);
+            });
+            $('.btn-three').ready(function() {
+                var str = $("#extra").text();
+                alert(str);
+            });
+        });
+    </script>
+</body>
+</html>

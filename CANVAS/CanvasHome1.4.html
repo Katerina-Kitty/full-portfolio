@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas height="1500" width="1500" id="example">Обновите браузер</canvas>
+
+    <script>
+        var example = document.getElementById("example");
+        ctx = example.getContext('2d');
+
+        ctx.fillStyle = "#EFEFEF";
+        ctx.fillRect(10, 10, 400, 400);
+
+        ctx.fillStyle = "green";
+        ctx.fillRect(155, 85, 100, 100);
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(155, 230, 100, 100)
+
+    </script>
+</body>
+</html>

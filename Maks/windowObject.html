@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+    <script>
+        //Объект window!
+        //Первое свойство в window - navigator!
+        alert(window.navigator.appName); //Выводит название браузера!
+        //Платформа браузера.
+
+        window.navigator.appVersion; //выводит версию браузера!
+        window.navigator.battery; // Информация про статус зарядки акума.
+        window.navigator.oscpu; // название операционной системы
+        window.navigator.cookieEnabled; //проверяет включен куки или нет.
+        
+        //Второе свойство в window - history!
+        //Внутри history  у нас есть свойства и методы!
+        //СВОЙСТВА:
+        window.history.length; // Количество элементов в истории за текущую сессию!
+        window.history.state; // данные о текущем элементе истории. 
+
+        //МЕТОДЫ:
+        window.history.back(); //переходит на обратную страницу в истории ("Назад")!
+        window.history.forward(); //переходит на следущюю страницу в истории ("Вперед")!
+
+        //Второе свойство в window - screen!
+        //информация о экране пользователя!
+
+        screen.height; //Высота в пикселях
+        screen.width; //Ширина в пикселях
+        screen.availTop; //координаты верхней границы экрана!
+
+        //alert('Экран: ' + screen.width + 'px' + ' x ' + screen.height + 'px');
+
+        
+    </script>
+</body>
+</html>

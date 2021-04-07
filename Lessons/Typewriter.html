@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Typewriter</h1>
+
+    <button onclick="TypeR()">Click me</button>
+
+    <p id="demo"></p>
+
+    <script>
+        var i = 0;
+        var txt = "Lorem ipsun blabla text blabla.";
+        var speed = 50;
+
+        function TypeR() {
+            if(i < txt.length) {
+                document.getElementById('demo').innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(TypeR, speed);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson2</title>
+    <style>
+      /* ТЕГ ДЛЯ ЯЗЫКА CSS! */
+      .style1 {
+        /* Название стиля (обязательно с точкой) */
+        width: 300px; /* Ширина блока */
+        height: 300px; /* Высота блока */
+        background-color: #8d35b6; /* Фон (цвет) блока */
+      }
+    </style>
+  </head>
+  <body>
+    <ul type="square">
+      <!--square или circle-->
+      <!--Список с квадратами (по аналогии <ol>)!-->
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Meat</li>
+      <li>Drinks</li>
+      <ol type="1" start="1">
+        <!--Список внутри списка!-->
+        <li>Coffee</li>
+        <li>Tea</li>
+      </ol>
+    </ul>
+
+    <br />
+    <hr />
+    <br />
+
+    <table border="5">
+      <!--border отличается по цвету, взято из версии HTML4-->
+      <tr>
+        <!--Table row - строка таблицы-->
+        <th>
+          <!--Table header - заголовок таблицы-->
+          Name
+        </th>
+        <th>LastName</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <!--ВТОРАЯ СТРОКА ТАБЛИЦЫ!-->
+        <td>
+          <!--Table data - информация в таблице-->
+          Maxim
+        </td>
+        <td>Smirnov</td>
+        <td>Ostrava</td>
+      </tr>
+      <tr>
+        <!--ВТОРАЯ СТРОКА ТАБЛИЦЫ!-->
+        <td>
+          <!--Table data - информация в таблице-->
+          Vasya
+        </td>
+        <td>Petrov</td>
+        <td>Ottava</td>
+      </tr>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <!--value = значение (id)-->
+    <select>
+      <!--Выпадающий список-->
+      <option value="q">Audi</option>
+      <!--1 из елементов выпадающего списка (по аналогии с <li>)!-->
+      <option value="w">BMW</option>
+      <option value="3">Nissan</option>
+    </select>
+
+    <br />
+    <hr />
+    <br />
+
+    <input type="text" />
+    <br />
+    <br />
+    <input type="number" min="19" max="199" step="19" />
+    <br />
+    <br />
+    <input type="file" />
+    <br />
+    <br />
+    <input type="color" />
+
+    <br />
+    <hr />
+    <br />
+
+    <!--Внутрь class пишем название стиля БЕЗ ТОЧКИ!!!-->
+    <div class="style1">
+      <!--блок - по дефолту он у нас пустой-->
+      Just div
+    </div>
+  </body>
+</html>

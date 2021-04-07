@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methods for Date()</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <script>
+      //getTime()
+      var d = new Date();
+      document.getElementById("demo1").innerHTML = d.getTime();
+      //Получаем время в миллисекундах с 01 января 1970 года!
+
+      //getFullYear()
+      document.getElementById("demo2").innerHTML = d.getFullYear();
+      //2020
+
+      //getMonth()
+      //document.getElementById("demo3").innerHTML = d.getMonth();
+      //Так делать ненада!!!
+
+      var months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      document.getElementById("demo3").innerHTML = months[d.getMonth()]; //d.getMonth() - число, выступает в примере как ИНДЕКС!
+
+      //getDate() - date в js подразумевает Дату дня (число дня) получаем число от 1 до 31
+      document.getElementById("demo4").innerHTML = d.getDate();
+
+      //getHours() - получаем часы (0-23)
+      //getMinutes() - получаем минуты (0-59)
+      //getSeconds() - получаем секунды (0-59)
+      //getMilliseconds() - получаем миллисекунды (0-999), в 1с = 1000мс
+
+      //getDay() - день недели (0-6)
+
+      var days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      document.getElementById("demo5").innerHTML = days[d.getDay()];
+
+      //setFullYear() Когда работаем с set = каждый раз вызываем новую дату!
+      var d2 = new Date();
+      d2.setFullYear(2010);
+      document.getElementById("demo6").innerHTML = d2;
+
+      //setDate() = задаём день месяца!
+      var d3 = new Date();
+      d3.setDate(25);
+      document.getElementById("demo7").innerHTML = d3;
+    </script>
+  </body>
+</html>

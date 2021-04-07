@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .page-header {
+            color: red;
+            text-transform: uppercase;
+        }
+
+        .highlight {
+            background: yellow;
+        }
+
+        .hint {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demo text</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reiciendis molestias, ducimus aliquam, neque corrupti deleniti vitae cupiditate autem fugit quibusdam hic, at minima. Quos, quae. Iure facere a voluptas!</p>
+    <p class="hint">
+        <strong>Tip:</strong> Hello how are you.
+    </p>
+    <button type="button">Add Class</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1").addClass("page-header");
+                $("p.hint").addClass("highlight");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Методы массива</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <script>
+      // Метод Join() - заменяет запятую на твой вариант! (Пробелы учитываются!)
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo1").innerHTML = fruits.join(" * "); //"demo1" или 'demo1' - разницы НЕТ!
+
+      //Метод Pop() - "Толчек" - Удаляет последний элемент из массива!
+      var fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo2").innerHTML = fruits2.pop();
+
+      //Метод Shift() - "Толчек" - Удаляет первый элемент из массива!
+      var fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo3").innerHTML = fruits3.shift();
+      document.getElementById("demo6").innerHTML = fruits3;
+
+      //Метод unshift()  - Добавляет новый элемент в начало массива!
+      var fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo4").innerHTML = fruits4.unshift("Lemon");
+      document.getElementById("demo5").innerHTML = fruits4;
+    </script>
+  </body>
+</html>

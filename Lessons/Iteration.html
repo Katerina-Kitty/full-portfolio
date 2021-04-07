@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итерации массивов</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        var txt="";
+        var numbers = [4, 9, 16, 25];
+        numbers.forEach(myFunc1);
+        document.getElementById("demo1").innerHTML = txt;
+        function myFunc1(item, index) {
+            txt = txt + item + "<br>" + "<hr>";
+        }
+
+        var numbers1 = [4, 9, 16, 25];
+        var numbers2 = numbers1.map(myFunc2);
+        document.getElementById("demo2").innerHTML = numbers2;
+        function myFunc2(item, index, array) {
+            return item * 2;
+        }
+
+        var numbers3 = [4, 9, 16, 25];
+        var over10 = numbers3.filter(myFunc3);
+        document.getElementById("demo3").innerHTML = over10;
+        function myFunc3(value, index, array) {
+            return value >10;
+        }
+
+        var numbers4 = [4, 9, 16, 25];
+        var result = numbers4.reduce(myFunc4);
+        document.getElementById("demo4").innerHTML = result;  
+        function myFunc4(total, value, index, array) {
+            return total + value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate button</title>
+    <style>
+      .button {
+        background-color: #4caf50;
+        font-size: 24px; /*Размер шрифта*/
+        text-align: center; /* Для центровки текста!*/
+        cursor: pointer; /*Меняет курсор из стрелки на руку с пальцем!*/
+        color: white; /*color - цвет текста! (внутри кнопки или просто на странице - не играет роли!)*/
+        border: none; /*Ободок - чаще всего пишем с none!*/
+        padding: 15px 25px;
+        border-radius: 15px; /*Закругление кнопки по краям!*/
+        box-shadow: 0 9px #999; /*Задаём тень элементу - 1)0 - отступ тени от кнопки*/
+        /*2)9px - высота тени под елементом */
+        /*3)#999 - цвет тени!*/
+        outline: none; /*Наружный черный ободок при нажатии кнопки!*/
+      }
+
+      /*hover - что просходит при наведении на элемент!*/
+      .button:hover {
+        background-color: #3e8341;
+      }
+      /*:active - что будет происходить при нажатии кнопки!*/
+      .button:active {
+        background-color: #3e8341;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        /*transform - на сколько и куда сдвигается кнопка!*/
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">Click me</button>
+  </body>
+</html>

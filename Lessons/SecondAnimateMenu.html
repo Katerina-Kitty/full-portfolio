@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Animate Menu</title>
+    <style>
+        #mySidenav a {
+            position: absolute;
+            left: -80px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+        #mySidenav a:hover {
+            left: 0;
+        }
+
+        #about {
+            top: 20px;
+            background-color: rgb(154, 189, 86);
+        }
+        #blog {
+            top: 80px;
+            background-color: rgb(94, 181, 240);
+        } 
+        #projects {
+            top: 140px;
+            background-color: tomato;
+        }
+        #contact {
+            top: 200px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="mySidenav">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="500" height="500" id="canvas"></canvas>
+
+    <script>
+        var data = [16, 68, 20, 30, 54];
+        var canvas = document.getElementById('canvas');
+
+        var c = canvas.getContext('2d');
+
+        //Настройки фона
+        c.fillStyle = "white";
+        c.fillRect(0, 0, 500, 500);
+
+        //Рисуем данные
+        c.fillStyle = "blue"
+        for(var i=0; i < data.length; i++) {
+            var dp = data[i];
+            c.fillRect(40 + i*100, 460 - dp * 5, 50, dp*5);
+        }
+
+        //Создаем линии и метки
+        c.fillStyle = "black";
+        c.lineWidth = 2.0;
+        c.beginPath(); //Запускает новый путь
+        c.moveTo(30, 10);
+        c.lineTo(30, 460);
+        c.lineTo(490, 460);
+        c.stroke(); //Закончить путь
+
+        //Добавляем значение метки и засечки слева
+        c.fillStyle = "black";
+        for(var i = 0; i < 6; i++) {
+            c.fillText((5-i)*20 + "", 4, i*80 + 60);
+            c.beginPath();
+            c.moveTo(25, i*80 + 60);
+            c.lineTo(30, i*80 + 60);
+            c.stroke();
+        }
+        
+        //Добавляем метки для х и названия для первых пяти месяцев года
+        var month = ["JAN", "FEB", "MAR", "APR", "MAY"];
+        //выводи текст
+        for(var i = 0; i < 5; i++) {
+            c.fillText(month[i], 50 + i*100, 475);
+        }
+
+    </script>
+</body>
+</html>

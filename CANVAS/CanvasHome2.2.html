@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas height="600" width="600" id="example">Обновите браузер</canvas>
+
+    <script>
+        var example = document.getElementById("example");
+        ctx = example.getContext('2d');
+
+        ctx.fillStyle = "#EFEFEF";
+        ctx.fillRect(10, 10, 500, 500);
+
+        ctx.fillStyle = "#010101";
+        ctx.moveTo(100, 50);
+        ctx.lineTo(400, 50);
+        ctx.stroke();
+
+        ctx.moveTo(100, 80);
+        ctx.lineTo(400, 80);
+        ctx.stroke();
+
+        ctx.moveTo(100, 110);
+        ctx.lineTo(400, 110);
+        ctx.stroke();
+
+        ctx.moveTo(100, 140);
+        ctx.lineTo(400, 140);
+        ctx.stroke();
+
+        ctx.moveTo(100, 170);
+        ctx.lineTo(400, 170);
+        ctx.stroke();
+
+        ctx.moveTo(100, 200);
+        ctx.lineTo(400, 200);
+        ctx.stroke();
+
+        ctx.moveTo(100, 230);
+        ctx.lineTo(400, 230);
+        ctx.stroke();
+
+        ctx.moveTo(100, 260);
+        ctx.lineTo(400, 260);
+        ctx.stroke();
+
+        ctx.moveTo(100, 290);
+        ctx.lineTo(400, 290);
+        ctx.stroke();
+
+        ctx.moveTo(100, 320);
+        ctx.lineTo(400, 320);
+        ctx.stroke();
+
+        ctx.moveTo(100, 350);
+        ctx.lineTo(400, 350);
+        ctx.stroke();
+
+        /* for(var i = 1; i<=10; i++) {
+            ctx.moveTo(50, 15 * i);
+            ctx.lineTo(150, 15 * i);
+        }
+
+        ctx.stroke(); */
+
+    </script>
+
+</body>
+</html>

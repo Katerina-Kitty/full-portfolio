@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" class="btn-one">Get P content</button>
+    <button type="button" class="btn-two">Get div content</button>
+
+    <div id="container">
+        <h1>Hello World</h1>
+        <p>The best <b>iphone in the world</b>!</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.btn-one').click(function(){
+                var str = $("p").html();
+                alert(str);
+            });
+            $('.btn-two').click(function(){
+                var str = $('#container').html();
+                console.log(str);
+            });
+        });
+    </script>
+</body>
+</html>

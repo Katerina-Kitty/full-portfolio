@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <script>
+        var months1 = ["January", "February", "March", "April", "May", "June", "June", "August", "September", "October", "November", "December"];
+        document.getElementById("demo1").innerHTML = months1.join(" * ");
+
+        var months2 = ["January", "February", "March", "April", "May", "June", "June", "August", "September", "October", "November", "December"];
+        document.getElementById("demo2").innerHTML = months2.pop();
+
+        var months3 = ["January", "February", "March", "April", "May", "June", "June", "August", "September", "October", "November", "December"];
+        document.getElementById("demo3").innerHTML = months3.shift();
+        document.getElementById("demo4").innerHTML = months3;
+
+        var months4 = ["January", "February", "March", "April", "May", "June", "June", "August", "September", "October", "November", "December"];
+        document.getElementById("demo5").innerHTML = months4.unshift("April", "June");
+        document.getElementById("demo6").innerHTML = months4;
+
+    </script>
+</body>
+</html>

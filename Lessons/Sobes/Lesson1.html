@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input list="Country">
+    <datalist id="Country">
+        <option value="India"></option>
+        <option value="Italy"></option>
+        <option value="Israel"></option>
+    </datalist>
+
+
+    <script>
+        //Числа Фибоначчи
+        0,1,1,2,3,5,8,13,21,34
+
+        const fibonacci = num => {
+            const result = [0, 1];
+            for (var i=2; i <=num; i++) {
+                const prevNum1 = result[i - 1]; //0
+                const prevNum2 = result[i - 2]; //1
+                result.push(prevNum1 + prevNum2); //1
+            }
+            return result[num];
+        }
+        console.log(fibonacci(7));
+
+
+        //КАРРИРОВАНИЕ
+        function f(a, b) {
+            if (b !== undefined) {
+                return a + b;
+            }
+            else {
+                return function (b) {
+                    return a + b;
+
+                }
+            }
+        }
+        console.log(f(2,3));
+        console.log(f(2)(3));
+
+        //Напишите код, который делает из массива - объект
+        var arr = [ {name: 'widht', value: 10}, {name: 'height', value: 20}];
+        
+        function getObj (arr) {
+            var obj = {};
+                arr.forEach(function(item) {
+                    obj[item.name] = item.value;
+                }) 
+                return obj;
+        }
+        console.log(getObj(arr));
+    </script>
+</body>
+</html>

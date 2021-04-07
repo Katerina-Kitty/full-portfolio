@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn1">Click</button>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi eligendi dolores fugit! Esse maxime voluptate ipsam sit in id alias assumenda, eius, hic explicabo earum, laboriosam doloribus pariatur excepturi omnis.</p>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Chaining-->
+    <p id="p1">Jquery is fun</p>
+    <button id="btn2">Click</button>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("p").hide("slow", function() {
+                    alert("P hidden");
+                });
+            });
+        });
+
+
+        $(document).ready(function() {
+            $("#btn2").click(function() {
+                $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+            })
+        })
+    </script>
+</body>
+</html>

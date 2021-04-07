@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <title>Jquery Universal Interface</title>
+    <style>
+        .toggler {
+            width: 500px;
+            height: 200px;
+        }
+
+        #button {
+            padding: .5em 1em;
+            text-decoration: none;
+        }
+
+        #effect {
+            width: 240px;
+            height: 170px;
+            padding: .4em;
+            position: relative;
+        }
+
+        #effect h3 {
+            margin: 0;
+            padding: .4em;
+            text-align: center;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="toggler">
+        <div id="effect" class="ui-widget-content ui-cornel-all">
+            <h3 class="ui-widget-header ui-corner-all">
+                Show
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laudantium natus, accusantium tempore nostrum, blanditiis non harum autem nemo quidem impedit, fuga labore neque modi architecto esse. Itaque, commodi omnis.</p>
+        </div>
+    </div>
+
+    <select name="effect" id="effectTypes">
+        <option value="blind">Blind</option>
+        <option value="bounce">Bounce</option>
+        <option value="clip">Clip</option>
+        <option value="drop">Drop</option>
+        <option value="explode">Explode</option>
+        <option value="fade">Fade</option>
+        <option value="fold">Fold</option>
+        <option value="highlight">Highlight</option>
+        <option value="puff">Puff</option>
+        <option value="pulsate">Pulsate</option>
+        <option value="scale">Scale</option>
+        <option value="shake">Shake</option>
+        <option value="size">Size</option>
+        <option value="slide">Slide</option>
+    </select>
+
+    <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+
+    <script>
+        $(function(){
+            //Получает эффект из выпадающего списка
+            function runEffect(){
+                var selectedEffect = $('#effectTypes').val(); //value - значение
+                var option = {}; //Object
+                //некоторые эффекты в данный момент используют параметры
+                if (selectedEffect === "scale") {
+                    option = {percent: 50};
+                }
+                else if (selectedEffect === "size") {
+                    option = {to: {width: 280, height: 185}}
+                }
+                $('#effect').show(selectedEffect, option, 500, callback);
+            };
+
+            function callback() {
+                setTimeout(function(){
+                    $('#effect:visible').removeAttr("style").fadeOut();
+                }, 1500);
+            };
+
+            $('#button').on("click", function(){
+                runEffect();
+            });
+            
+            $('#effect').hide();
+        });
+    </script>
+
+</body>
+</html>

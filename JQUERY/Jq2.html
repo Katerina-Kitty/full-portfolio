@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #panel, #flep {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!--SLIDE-->
+    <div id="flip">Нажмите для открытия</div>
+    <div id="panel">Открытая панель</div> 
+
+    <br>
+    <br>
+    <br>
+
+    <!--ANIMATION-->
+    <button>Start Animation</button>
+
+    <div style="background: green; height: 100px; width: 100px; position: absolute;"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#flip').click(function(){
+                $('#panel').slideToggle("slow");
+            });
+        });
+
+
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("div").animate({left: '250px', bottom: '100px', opacity: '0.5', width: '150px'}); //top, bottom, left, right
+            });
+        });
+
+    </script>
+    
+</body>
+</html>

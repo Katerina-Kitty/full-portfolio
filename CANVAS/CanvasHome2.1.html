@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <canvas width="500" height="500" id="example">Обновите браузер</canvas>
+    
+    <script>
+    var example = document.getElementById("example");
+    ctx = example.getContext('2d');
+
+    ctx.fillStyle = "#EFEFEF";
+    ctx.fillRect(10, 10, 400, 400);
+
+    ctx.lineWidth = 12.0;
+    ctx.beginPath();
+    ctx.rect(100, 100, 200, 200);
+    ctx.stroke();
+
+    </script>
+
+</body>
+</html>

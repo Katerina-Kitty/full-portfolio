@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas width="510" height="510" id="example">Обновите браузер</canvas>
+
+    <script>
+        var example = document.getElementById("example");
+        ctx = example.getContext('2d');
+
+        ctx.fillStyle = "#EFEFEF";
+        ctx.fillRect(10, 10, 500, 500)
+
+        ctx.fillStyle = "black";
+        ctx.lineWidth = 2.5;
+        ctx.beginPath();
+        ctx.moveTo(50, 50); //вертикальная линия
+        ctx.lineTo(50, 480);
+        ctx.moveTo(45, 470); //стрелочка по у
+        ctx.lineTo(50, 480);
+        ctx.lineTo(55, 470);
+        ctx.moveTo(50, 50);
+        ctx.lineTo(480, 50); //горизонтальная линия
+        ctx.moveTo(470, 45); //стрелочка по х
+        ctx.lineTo(480, 50);
+        ctx.lineTo(470, 55);
+        ctx.stroke();
+
+        ctx.font = "normal 25px sans-serif";
+
+        ctx.fillText("0,0", 45, 40);
+        ctx.fillText("Y", 65, 265);
+        ctx.fillText("X", 265, 80);
+
+
+    </script>
+</body>
+</html>

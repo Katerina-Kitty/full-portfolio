@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Подготовка холста-->
+    <!--Стандартная высота и ширина - 150х300 пикселей-->
+
+    <canvas height="600" width="600" id="example">Обновите браузер</canvas>
+    <script>
+    var example = document.getElementById("example");
+    ctx = example.getContext('2d');
+    /* ctx.fillRect(x, y, width, height);  */            //Рисует закрашенный прямоугольник, x и y - его координаты создания
+  /*   ctx.fillRect(0, 0, 80, 100); 
+    ctx.clearRect(0, 0, 80, 100);     //Очищает область на холсте размера с прямоугольник который задали
+
+    //Пример с цветом и наложением
+
+    ctx.fillStyle = "red";   //Задаёт цвет элемента
+    ctx.fillRect(20, 20, 75, 50);
+
+   //Задаём прозрачность
+   ctx.globalAlpha = 0.2; //То же самое что и opacity
+   ctx.fillStyle = "blue";
+   ctx.fillRect(50,50, 75, 50);
+   ctx.fillStyle = "green";
+   ctx.fillRect(80,80, 75, 50); */
+   
+   /* ctx.beginPath();  //Получить путь (получить путь по которому надо отрисовать линию)
+   ctx.moveTo(50, 50);  // перемещение в нужную нам точку
+   ctx.lineTo(150, 50); */
+   //ctx.stroke(); //отрисовать!
+
+   /* радианы */
+
+   //Для перевода градусов в радианы
+
+   function getRadians(degrees) {
+       return (Math.PI/180)*degrees;
+   }
+
+   //Окружность
+
+  /*  ctx.arc(x, y, радиус r, начальный угол startAngle, конечный угол endAngle); */
+
+ /*   ctx.arc(200, 200, 75, 0, getRadians(360));
+   ctx.stroke(); */
+
+   //полукруг
+
+   ctx.arc(100, 100, 75, 0, getRadians(180));
+   ctx.fill();
+
+
+    </script>
+</body>
+</html>
+
+
+a += b;
+a = a + b;

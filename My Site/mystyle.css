@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    padding: 130px;
+    text-align: center;
+    background-image: url(butterfly.jpg);
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 50px;
+        text-shadow:
+    -1px -1px 1px silver,
+    1px -1px 1px silver;
+}
+
+.header p {
+    font-style: italic;
+}
+
+.navbar {
+    overflow: hidden;
+    background-image:  linear-gradient(45deg, rgba(238,253,252,0) 30%, rgba(238,253,252,0.8), rgba(238,253,252,0.0) 70%),
+                               linear-gradient(to right, rgb(99, 119, 163), rgba(255,255,255,.9) 45%, rgba(146, 169, 211, 0.5)),
+                               linear-gradient(to right, rgb(135, 139, 187), rgba(255,255,255,.9) 45%, rgba(130, 154, 190, 0.5)),
+                               linear-gradient(to right, rgb(170, 187, 223), rgba(255, 255, 255, 0.9) 45%, rgba(170, 202, 223, 0.5)),
+                               linear-gradient(to right, rgb(170, 202, 223), rgba(255,255,255,.9) 45%, rgba(170, 197, 223, 0.5));
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(30, 13, 129);
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    text-shadow:
+    -1px -1px 1px silver,
+    1px -1px 1px silver;
+    color: white;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: #ac85aa93;
+    padding: 20px;
+}
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: #d8ecf5;
+    padding: 20px;
+}
+
+.footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #2e51ec;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 650px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px;) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.header a {
+    background-color: rgba(130, 168, 238, 0);
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    float: right;
+}
+
+.fakeimg {
+    background-color: rgb(120, 112, 156);
+    width: 100%;
+    padding: 20px;
+}

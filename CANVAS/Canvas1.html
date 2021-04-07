@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Подготовка холста-->
+    <canvas height="320" width="480" id="example">Обновите браузер</canvas>
+
+
+    <script>
+        var example =document.getElementById("example");
+        ctx = example.getContext('2d');
+        /* ctx.fillRect(x, y, width, height); */ 
+        ctx.fillRect(0, 0, 80, 100);
+        ctx.clearRect(0, 0, 80, 100);
+
+        //Пример с цветом и наожением
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(20, 20, 75, 50);
+
+        //Задаем прозрачность
+        ctx.globalAlpha = 0.2;
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 75, 50);
+
+        ctx.fillStyle = "green";
+        ctx.fillRect(80, 80, 75, 50);
+
+        /* ctx.beginPath();
+        ctx.moveTo(50, 50);
+        ctx.lineTo(150, 50);
+        ctx.stroke(); */
+
+        /* радиан */
+
+        function getRadians(degrees) {
+            return (Math.PI/180)*degrees;
+        }
+        /* oкружность */
+        /* ctx.arc(x, y, радиус r, начальный угол startAngel, конечный угол endAngel, по часовой или против часовой рисуем); */
+        /* ctx.arc(200, 200, 75, 0, getRadians(360));
+        ctx.stroke(); */
+
+        //полукруг
+        ctx.arc(100, 100, 75, 0, getRadians(180));
+        ctx.fill();
+
+
+    </script>
+</body>
+</html>

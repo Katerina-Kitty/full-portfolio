@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button">Insert text</button>
+    <div id="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro delectus excepturi laboriosam eligendi suscipit aut, minus magni nisi accusamus quis odio ratione vitae. Architecto repellat, similique exercitationem laudantium sapiente iusto!</p>
+        <p>Hello World</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("p").append('<a href="#"> read more</a>');
+            $("button").click(function(){
+                $("#container").append("This is demo");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework3</title>
+</head>
+<body>
+    <p id="demo3">
+
+    </p>
+
+    <button onclick="myFunc3()">
+        Click me    
+    </button>
+
+    <p id="demo4">
+
+    </p>
+
+    <button onclick="myFunc4()">
+        Click me    
+    </button>
+
+    <p id="demo5">
+        Уменьшение текста
+    </p>
+    
+    <button onclick="myFunc5()">
+        Click me
+    </button>
+
+    <script>
+        function myFunc5() {
+            document.getElementById("demo5").style.fontSize = "14px"
+        }
+
+        function myFunc3() {
+            document.getElementById("demo3").innerHTML = Date();
+        }
+
+        function myFunc4() {
+            document.getElementById("demo4").innerText = Date();
+        }
+    </script>
+
+    <br>
+    <hr>
+    
+</body>
+</html>

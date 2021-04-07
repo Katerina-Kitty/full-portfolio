@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Button</title>
+    <style>
+        .buttonone {
+            position: relative;
+            display: inline-block;
+            color: #777674;
+            font-weight: bold;
+            text-decoration: none;
+            user-select: none;
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 3px / 100%;
+            background-image:  linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+                               linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+                               linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+                               linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+                               linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+                               linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+            background-repeat: no-repeat;
+            background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+            background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+            box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+        }
+        .buttonone:hover {
+            transition: 0.5s linear;
+            background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+        .buttonone:active {
+            top: 1px;
+        }
+        .buttonone {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+
+        .buttontwo {
+            position: relative;
+            display: inline-block;
+            color: #5279a5;
+            font-weight: bold;
+            text-decoration: none;
+            user-select: none;
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 3px / 100%;
+            background-image:  linear-gradient(45deg, rgba(238,253,252,0) 30%, rgba(238,253,252,0.8), rgba(238,253,252,0.0) 70%),
+                               linear-gradient(to right, rgb(216, 246, 252), rgba(216, 246, 252,0) 20%, rgba(216, 246, 252,0) 90%, rgba(216, 246, 252,.3)),
+                               linear-gradient(to right, rgb(99, 119, 163), rgba(255,255,255,.9) 45%, rgba(146, 169, 211, 0.5)),
+                               linear-gradient(to right, rgb(135, 139, 187), rgba(255,255,255,.9) 45%, rgba(130, 154, 190, 0.5)),
+                               linear-gradient(to right, rgb(170, 187, 223), rgba(255, 255, 255, 0.9) 45%, rgba(170, 202, 223, 0.5)),
+                               linear-gradient(to right, rgb(170, 202, 223), rgba(255,255,255,.9) 45%, rgba(170, 197, 223, 0.5));
+            background-repeat: no-repeat;
+            background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+            background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+            box-shadow: rgba(41, 51, 180, 0.5) 3px 10px 10px -10px;
+        }
+        .buttontwo:hover {
+            transition: 0.5s linear;
+            background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+        .buttontwo:active {
+            bottom: 1px;
+        }
+        .buttontwo {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .buttonthree {
+            position: relative;
+            display: inline-block;
+            color: #b95493;
+            font-weight: bold;
+            text-decoration: none;
+            user-select: none;
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 3px / 100%;
+            background-image:  linear-gradient(45deg, rgba(253, 238, 252, 0) 30%, rgba(253, 238, 252, 0.8), rgba(238,253,252,0.0) 70%),
+                               linear-gradient(to right, rgb(252, 216, 250), rgba(216, 246, 252,0) 20%, rgba(216, 246, 252,0) 90%, rgba(252, 216, 249, 0.3)),
+                               linear-gradient(to right, rgb(163, 99, 160), rgba(255,255,255,.9) 45%, rgba(211, 146, 205, 0.5)),
+                               linear-gradient(to right, rgb(187, 135, 178), rgba(255,255,255,.9) 45%, rgba(190, 130, 185, 0.5)),
+                               linear-gradient(to right, rgb(223, 170, 219), rgba(255, 255, 255, 0.9) 45%, rgba(223, 170, 223, 0.5)),
+                               linear-gradient(to right, rgb(223, 170, 216), rgba(255,255,255,.9) 45%, rgba(223, 170, 214, 0.5));
+            background-repeat: no-repeat;
+            background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+            background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+            box-shadow: rgba(180, 41, 157, 0.5) 3px 10px 10px -10px;
+        }
+        .buttonthree:hover {
+            transition: 0.5s linear;
+            background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+        .buttonthree:active {
+            top: 1px;
+        }
+        .buttonthree {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .buttonfour {
+            position: relative;
+            display: inline-block;
+            color: #5cb954;
+            font-weight: bold;
+            text-decoration: none;
+            user-select: none;
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 3px / 100%;
+            background-image:  linear-gradient(45deg, rgba(239, 253, 238, 0) 30%, rgba(239, 253, 238, 0.8), rgba(241, 253, 238, 0) 70%),
+                               linear-gradient(to right, rgb(216, 252, 216), rgba(216, 246, 252,0) 20%, rgba(216, 246, 252,0) 90%, rgba(220, 252, 216, 0.3)),
+                               linear-gradient(to right, rgb(99, 163, 102), rgba(255,255,255,.9) 45%, rgba(146, 211, 146, 0.5)),
+                               linear-gradient(to right, rgb(135, 187, 138), rgba(255,255,255,.9) 45%, rgba(135, 190, 130, 0.5)),
+                               linear-gradient(to right, rgb(170, 223, 170), rgba(255, 255, 255, 0.9) 45%, rgba(170, 223, 170, 0.5)),
+                               linear-gradient(to right, rgb(170, 223, 173), rgba(255,255,255,.9) 45%, rgba(170, 223, 173, 0.5));
+            background-repeat: no-repeat;
+            background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+            background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+            box-shadow: rgba(41, 180, 48, 0.5) 3px 10px 10px -10px;
+        }
+        .buttonfour:hover {
+            transition: 0.5s linear;
+            background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+        }
+        .buttonfour:active {
+            bottom: 1px;
+        }
+        .buttonfour {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <button class="buttonone">
+        Click me
+    </button>
+
+    <button class="buttontwo">
+        Click me
+    </button>
+   
+    <button class="buttonthree">
+        Click me
+    </button>
+    
+    <button class="buttonfour">
+        Click me
+    </button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HoverButton</title>
+    <style>
+      .btn {
+        background-color: #f4511e;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px; /*Читать!*/
+        opacity: 1; /*Прозрачность!*/
+        transition: 2s; /*Можно поиграться!*/ /*За сколько времени происходит анимация, задаём в секундах!*/
+      }
+
+      .btn:hover {
+        opacity: 0.6; /*Прозрачный цвет - transparent!*/
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">
+      Hover over me
+      <!--Наведись на меня!-->
+    </button>
+  </body>
+</html>

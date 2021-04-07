@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const users = [
+            {
+                gender: 'male',
+                age: 22
+            },
+            {
+                gender: 'female',
+                age: 20
+            },
+            {
+                gender: 'male',
+                age: 32
+            }
+        ]
+
+        var sumAge = users.reduce((res, current) => {
+            return {
+                age: res.age + current.age
+            }
+        });
+
+        var averAge = sumAge.age / users.length;
+        console.log(averAge);
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My first resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+        }
+
+        /*.header {
+            padding: 80px;
+            text-align: center;
+            background: #8DF0ED;
+            color: #2f4e4d;
+        }*/
+
+        /*.header h1 {
+            font-size: 50px;
+        }*/
+
+        .navbar {
+            overflow: hidden;
+            background-color: #0D4847;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #6DC3C1;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a.right {
+            float: right;
+        }
+
+        .navbar a:hover {
+            background-color: #B8FCD7;
+            color: #8DF0ED;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            -ms-flex: 30%;
+            flex: 30%;
+            background-color: #EEFEF5;
+            padding: 25px;
+        }
+
+        .main {
+            -ms-flex: 70%;
+            flex: 70%;
+            background-color: white;
+            padding: 25px;
+        }
+
+        .img {
+            background-color: tomato;
+            width: 100%;
+            padding: 25px;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color:  #0D4847;
+        }
+
+        @media screen and (max-width: 700px){
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>Мое первое резюме</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+        <a href="#">Skype</a>
+        <a href="#" class="right">Contacts</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h1>Екатерина Кушнир</h1>
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>fdavjsgbgkb;gfkdsssssssssddddddddddddcwmkveraebtkm</p>
+            <h3>More Info</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg" style="height: 60px;">Image</div> <br>
+            <div class="fakeimg" style="height: 60px;">Image</div> <br>
+            <div class="fakeimg" style="height: 60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2020</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea error iure earum maiores dolor natus adipisci! Laudantium officiis, voluptate dignissimos alias rem nulla modi, saepe iure placeat consequuntur aut.</p>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2020</h5>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ea error iure earum maiores dolor natus adipisci! Laudantium officiis, voluptate dignissimos alias rem nulla modi, saepe iure placeat consequuntur aut.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+        <a href="#">Skype</a>
+        <a href="#" class="right">Contacts</a>
+    </div>
+</body>
+</html>

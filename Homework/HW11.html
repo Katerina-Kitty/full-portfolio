@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animate Menu v 2.0</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.3s;
+            padding-top: 30px;
+        }
+        .sidenav a {
+            padding: 10px;
+            text-decoration: none;
+            font-size: 28px;
+            color: #94FF90;
+            display: block;
+            transition: 0.4s;
+        }
+        .sidenav a:hover {
+            color: #17E510;
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 28px;
+            font-size: 30px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <h1>My Animated Menu v 2.0</h1>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()">OPEN</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

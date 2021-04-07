@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate Menu v 1.0</title>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      /* side navigation  */
+      .sidenav {
+        /* Стиль самого меню */
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1; /* ЧИТАТЬ  Указываем что плоскость z будет присутствовать! */
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      /* Стиль для ссылок (кнопок в меню) */
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #a8a8a8;
+        display: block; /* Заставляет каждую ссылку условно засунуть в div*/
+        transition: 0.6s;
+      }
+
+      /*Стиль - что происходит при наведении на ссылку*/
+      .sidenav a:hover {
+        color: blueviolet;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      /*Стандартно на телефоне 640px*/
+      /*Максимальная высота моего сайта (документа хтмл) - будет 450px*/
+      @media screen and (max-height: 450px) {
+        /* Медиа запросы */
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <h2>Animated Sidenav Example</h2>
+    <p>Click the button "Open" for navigation menu.</p>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      >OPEN</span
+    >
+
+    <script>
+      //javascript:void(0) - мы пишем для других разрабов, говоря им - после нажатия на эту кнопку - работа функции прекратиться!
+      // span = Текст без изменения стиля
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

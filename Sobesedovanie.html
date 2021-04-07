@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block1 {
+            width: 600px;
+            height: 200px;
+            border: 1px solid green;
+        }
+
+        .block2 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            outline: 1px solid black;
+        }
+
+        .kryg {
+            width: 100px;
+            height: 100px;
+            border-right: 1px solid #f00;
+            border-radius: 0 50% 50% 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="block1">
+        <div class="block2"></div>
+        <div class="block2"></div>
+        <div class="block2"></div>
+        <div class="block2"></div>
+    </div>
+    
+
+    <br>
+    <br>
+
+    <div class="kryg"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <input type="text"> <!--Color, Number, Time, Email-->
+
+    <!-- Canvas - это область HTML документа, в который вы можете рисовать. -->
+
+
+    <script>
+
+        
+
+        //FizzBuzz - Напишите функцию, которая выводит в консоль числа от 1 до n, где n - целое число, которое функция принимает в качестве аргумента, при этом:
+       /*  * Выводит fizz вместо чисел - кратных 3;
+        * Выводит buzz вместо чисел - кратных 5;
+        * Выводит fizzfizz вместо чисел - кратных 3 и 5;
+ */
+
+ //Результат
+
+      //1
+      //2
+      //fizz
+      //4
+      //buzz
+
+      //Стрелочная функция
+      
+     /*  function fizzBuzz(num) {
+
+      } */
+
+
+      const fizzBuzz = num => {
+      for(var i = 1; i <= num; i++) {
+          //Проверка, кратно ли 3 и 5
+          if(i % 3 === 0 && i % 5 === 0) {
+              console.log('fizzbuzz');
+          }
+          else if (i % 3 === 0) {
+              console.log("fizz");
+          }
+          else if (i % 5 === 0) {
+              console.log("buzz");
+          }
+          else {
+              console.log(i);
+          }
+      }
+      }
+
+      //Найти ГЛАСНЫЕ БУКВЫ
+      //Напишите функцию, которая принимает строку в качестве аргумента и возвращает кол-во гласных, содержащихся в вами заданной строке.
+      //Гласными являются "a" "e" "i" "o" "u"
+     
+      Результат
+
+      findVowels("hello") // -> 2
+      findVowels("why") // -> 0
+
+      .includes()
+
+      const findVowels = str => {
+          var count = 0;
+          var vowels = ['a', 'e', 'i', 'o', 'u'];    //toUpperCase() - для всех больших букв
+          for(var char of str.toLowerCase()) {   //Проверяю буквы в введенном слове только те - которые написанны маленьким шрифтом
+              if(vowels.includes(char)) {
+                  count++;
+              }
+          }
+          return count;
+      }
+
+
+      
+
+    </script>
+
+</body>
+</html>

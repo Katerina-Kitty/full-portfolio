@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <script>
+        var x = 16 + "Volvo";
+        document.getElementById('demo1').innerHTML = x;
+        var y = "Volvo" + 16;
+        var z = "Volvo" + 16 + 4;
+        var a = 16 + 4 + "Volvo";
+
+        var person = {firstname: "Katya", lastname: "Kushnir", age: "25"};
+
+        
+        document.getElementById('demo3').innerHTML = Boolean(10 > 9);
+
+        document.getElementById('demo2').innerHTML =
+        typeof "john" + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof NaN + "<br>" + 
+        typeof false + "<br>" +
+        typeof [1,2,3,4] + "<br>" +
+        typeof {name: "Vasya"} + "<br>" + 
+        typeof new Date() + "<br>" +
+        typeof function() {} + "<br>" +
+        typeof myCar + "<br>" +
+        typeof null;
+
+
+        var text = "";
+        var i = 0;
+        while(i<10) {
+            text +="<br>The number is " + i;
+            i++;
+        }
+        document.getElementById('demo4').innerHTML = text;
+
+
+
+        var text1 = "";
+        var j = 0;
+
+        do {
+            text1 +="<br>The number is " + j;
+            j++;  
+        }
+        while(j < 10);
+        document.getElementById('demo5').innerHTML = text1;
+
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block1 {
+            width: 600px;
+            height: 200px;
+            border: 1px solid green;
+        }
+
+        .block2 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            outline: 1px solid black;
+        }
+
+
+        .krug {
+            width: 100px;
+            height: 100px;
+            border-right: 1px solid #f00;
+            border-radius: 0 50% 50% 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="block1">
+        <div class="block2"></div>
+        <div class="block2"></div>
+        <div class="block2"></div>
+        <div class="block2"></div>
+    </div>
+
+
+    <br>
+    <br>
+    <div class="krug"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <script>
+
+        //FizzBuzz
+
+        //стрелочная функция
+        const fizzBuzz = num => {
+        for(var i=1; i <= num; i++) {
+            if(i % 3 === 0 && i % 5 === 0) {
+                console.log('fizzbuzz');
+            }
+            else if (i % 3 === 0) {
+                console.log('fizz');
+            }
+            else if (i % 5 === 0) {
+                console.log('buzz');
+            }
+            else {
+                console.log(i);
+            }
+        }
+        }
+
+    //Найти гласные буквы
+        //includes()
+
+        const findVolwes = str => {
+            var count = 0;
+            var vowels = ['a', 'e', 'i', 'o', 'u'];
+            for(var char of str.toLowerCase()) {
+                if(vowels.includes(char)) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+    </script>
+</body>
+</html>

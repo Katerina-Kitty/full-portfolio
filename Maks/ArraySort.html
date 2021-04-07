@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="myFunc()">Try it</button>
+
+    <p id="demo1"></p>
+    <button onclick="myFunc2()">Try it (Number)</button>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+      //Чтобы работало корректно - Первая буква либо ЗАГЛАВНАЯ либо маленькая.
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo1").innerHTML = fruits;
+      function myFunc() {
+        fruits.sort(); //Метод сортировки по алфавиту.
+        fruits.reverse(); //Метод реверс - сзаду наперёд!
+        document.getElementById("demo1").innerHTML = fruits;
+      }
+
+      //////////////////////////////////////////////////
+
+      var points = [40, 100, 1, 5, 25, 10];
+      document.getElementById("demo2").innerHTML = points;
+      function myFunc2() {
+        //points.sort();   //.sort() - Создан для массивов слов или букв, с цифрами не работает адекватно!
+        points.sort(function (a, b) {
+          //Здесь имя функции не нужно! Мы пользуемся ею только конкретно в этом месте!
+          return a - b; //return - Возвращение (Вывод информации!)
+        }); //function(a,b) {return a - b;} - Функция сравнения (ей 20 лет!)
+        document.getElementById("demo2").innerHTML = points;
+      }
+    </script>
+  </body>
+</html>

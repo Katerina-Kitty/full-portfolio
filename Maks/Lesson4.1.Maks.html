@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+    <p id="demo4"></p>
+
+    <script>
+      var a;
+      var b = 9;
+
+      /*  var car1 = "Nissan";
+      var car2 = "BMW";           - ТАК МАССИВ НЕ ДЕЛАЮТ!!!!
+      var car3 = "Audi"; */
+
+      var cars = [
+        "Nissan",
+        "BMW",
+        "Audi",
+        "Nissan",
+        "BMW",
+        "Audi",
+        "Nissan",
+        "BMW",
+        "Audi",
+        "Nissan",
+        "BMW",
+        "Audi",
+        "Nissan",
+        "BMW",
+        "Audi",
+        "Nissan",
+        "BMW",
+        "Audi",
+      ]; //КАЖДЫЙ ЕЛЕМЕНТ ИМЕЕТ СВОЙ ИНДЕКС - СЧЕТ В МАССИВЕ НАЧИНАЕТСЯ С 0!
+      document.getElementById("demo").innerHTML = cars;
+
+      document.getElementById("demo2").innerHTML = cars[2]; //Выводим машину по счету индекса (3 машина - 2 индекс!)
+
+      document.getElementById("demo3").innerHTML = cars.length; //length (длинна) - длинна масива (количество елемнтов в нём)
+    </script>
+  </body>
+</html>

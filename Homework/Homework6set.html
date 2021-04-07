@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <script>
+        var d1 = new Date();
+        d1.setFullYear(2015);
+        document.getElementById("demo1").innerHTML = d1;
+
+        var d2 = new Date();
+        d2.setDate(17);
+        document.getElementById("demo2").innerHTML = d2;
+
+        var d3 = new Date();
+        d3.setHours(13);
+        document.getElementById("demo3").innerHTML = d3;
+
+        var d4 = new Date();
+        d4.setMilliseconds(500);
+        document.getElementById("demo4").innerHTML = d4;
+
+        var d5 = new Date();
+        d5.setMinutes(25);
+        document.getElementById("demo5").innerHTML = d5;
+
+        var d6 = new Date();
+        d6.setMonth(d6.getMonth());
+        document.getElementById("demo6").innerHTML = d6;
+
+        var d7 = new Date();
+        d7.setSeconds(30);
+        document.getElementById("demo7").innerHTML = d7;
+
+        var d8 = new Date();
+        d8.setTime(1600206566709);
+        document.getElementById("demo8").innerHTML = d8;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Menu</title>
+    <style>
+       body, html {
+            height: 100%;
+        }
+        .parallax {
+            background-image: url('para.jpg');
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .sidenav {
+            height: 100%;
+            width: 150px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 5px 10px 5px 15px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #EA96FA ;
+            display: block;
+        }
+        .sidenav a:hover {
+            color: #FCD1FF;
+        }
+
+        .main {
+            margin-left: 150px;
+            font-size: 35px;
+            padding: 5px 10px;
+        }
+
+        #mySidenav a {
+            position: absolute;
+            right: -90px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 5px 0 0 5px;
+        }
+        #mySidenav a:hover {
+            right: 0;
+        }
+
+        #about {
+            top: 20px;
+            background-color: #610C67;
+        }
+        #blog {
+            top: 80px;
+            background-color: #670C0C;
+        } 
+        #projects {
+            top: 140px;
+            background-color: #270C67;
+        }
+        #contact {
+            top: 200px;
+            background-color: #0C672A ;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="#about">About</a>
+        <a href="#service">Service</a> 
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div id="mySidenav">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+    </div>
+
+    <div class="parallax"><div style="height: 800px; background-color: transparent;  font-size: 40px; margin: 0 0 0 150px;">
+        Слишком мало - сказать «Прости»,
+        Слишком много - ответить «Прощаю»,
+        Слишком глупо просить «Не грусти»,
+        И нечестно совсем - «Обещаю»,
+        
+        Безнадежно звучит «Я был должен…»,
+        И обманчиво - «Знаешь, я тоже…»,
+        Непонятно - «Я думал, мы сможем…»,
+        Как-то робко совсем - «Быть может…»,
+        
+        Проникновенно - «Сказать я хочу…»,
+        И с надеждой - «Не стоит, может…»,
+        И нежданно - «Тебя все люблю…»,
+        И печально - «И я тебя тоже…»,
+        
+        Грустно - «Часто тебя вспоминаю…»,
+        И с печалью в глазах - «Я знаю»,
+        И вздыхая - «Мне сны снятся…»,
+        И в ответ - «В них тебя обнимаю…»,
+        
+        Твердо - «Я во всем виноват…»,
+        Со слезами - «Не стоит, мы оба…»,
+        Горько - «Как вернуть все назад?»,
+        Плача - «Если бы знала, давно бы…»,
+        
+        Нежно за руки взяв - «Прости…»,
+        Губ коснувшись слегка - «Я прощаю…»,
+        Крепко-крепко обняв - «Не грусти»,
+        И поддавшись - «Я обещаю…»,
+        
+        Очень страшно услышать «Пора…»,
+        Слишком сложно ответить «Мне тоже…»,
+        И наивно - «Мы встретимся вновь?…»,
+        И жестоко ответить «Быть может…»,
+        
+        Слишком мало - сказать «Прости»,
+        Слишком много - ответить «Прощаю»,
+        Очень страшно сказать «Отпусти…»,
+        Невозможно сказать «Отпускаю…»…
+        </div></div>
+    
+    <div class="parallax"></div>
+  
+</body>
+</html>

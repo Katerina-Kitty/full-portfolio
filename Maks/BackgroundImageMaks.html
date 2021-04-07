@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+
+      .parallax {
+        /* Картинка которую использую */
+        background-image: url("Example.jpg");
+        /* Задаем высоту 100 процентов */
+        height: 100%;
+        /*Добавляю эффекты параллакса*/
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parallax"></div>
+
+    <div style="height: 1000px; background-color: blueviolet; font-size: 36px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cumque
+      possimus asperiores, consequatur, temporibus dicta ducimus et odio sed
+      iste assumenda iusto est aliquid voluptatum accusantium doloremque
+      explicabo quo sequi.
+    </div>
+
+    <div class="parallax"></div>
+  </body>
+</html>

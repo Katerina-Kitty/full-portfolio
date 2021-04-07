@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods for Date</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <script>
+        var d = new Date();
+        document.getElementById("demo1").innerHTML = d.getTime();
+
+        document.getElementById("demo2").innerHTML = d.getFullYear();
+
+        document.getElementById("demo3").innerHTML = d.getMonth();
+        //Так делать НЕЛЬЗЯ
+
+        var months = ["January", "February", "March", "April", "May", "June", "June", "August", "September", "October", "November", "December"];
+        document.getElementById("demo3").innerHTML = months[d.getMonth()];
+
+        document.getElementById("demo4").innerHTML = d.getDate();
+
+        var days = ["Sanday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fridey", "Saturday"];
+        document.getElementById("demo5").innerHTML = days[d.getDay()];      
+
+        var d2 = new Date();
+        d2.setFullYear(2010);
+        document.getElementById("demo6").innerHTML = d2;
+
+        var d3 = new Date();
+        d3.setDate(25);
+        document.getElementById("demo7").innerHTML = d3;       
+
+    </script>
+</body>
+</html>

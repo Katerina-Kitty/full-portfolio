@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="num" type="text" value="" placeholder="Input date">
+
+    <script>
+
+            //Дан инпут. В него вводится дата в формате 31.12.2016. По клику в этом же инпуте поставьте эту дату в формате 2016-12-31
+
+        var elem = document.getElementById('num);
+        elem.addEventListener('click', func);
+        function func(){
+            var arr2 = [];
+	        var str = elem.value;
+	        var arr = str.split('.');
+	        arr2 = arr.reverse();
+	        var str1 = arr2.join('-');
+	        elem.value = str1;
+        }
+
+    </script>
+    
+</body>
+</html>

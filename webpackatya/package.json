@@ -1,0 +1,18 @@
+{
+  "name": "webpackatya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "webpack --env.mode development",
+    "build": "webpack --env.mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.3.6"
+  }
+}
